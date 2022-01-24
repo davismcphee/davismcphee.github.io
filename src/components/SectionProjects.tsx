@@ -52,7 +52,7 @@ const SectionProjects = () => {
             />
 
             <CardProject
-              href="https://old.davismcphee.com"
+              href="https://github.com/davismcphee/old.davismcphee.github.io"
               backgroundImageUrl={oldWebsiteUrl}
               backgroundImagePosition="top"
               title="My Old Website"
