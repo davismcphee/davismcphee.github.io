@@ -1,18 +1,12 @@
-export interface CardProjectProps {
-  href: string;
-  backgroundImageUrl: string;
-  backgroundImagePosition?: "top" | "center";
-  title: string;
-  description: string;
-}
+import { Project } from "../types";
 
 const CardProject = ({
   href,
-  backgroundImageUrl,
+  backgroundImage,
   backgroundImagePosition,
   title,
   description,
-}: CardProjectProps) => {
+}: Project) => {
   const backgroundPosition =
     backgroundImagePosition === "top" ? "bg-top" : "bg-center";
 
@@ -24,7 +18,7 @@ const CardProject = ({
     >
       <div
         className={`w-full h-32 bg-cover ${backgroundPosition}`}
-        style={{ backgroundImage: `url('${backgroundImageUrl}')` }}
+        style={{ backgroundImage: `url('${backgroundImage}')` }}
       />
 
       <div className="pt-3 pb-5 px-5 min-h-[15rem]">
