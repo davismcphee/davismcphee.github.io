@@ -15,9 +15,10 @@ const LinkIcon = ({
     <a
       href={href}
       target="_blank"
-      className="inline-flex items-center text-blue-500 hover:underline focus:underline"
+      rel="noreferrer"
+      className="inline-flex items-center text-blue-600 hover:underline focus:underline"
     >
-      <Icon className="fill-blue-500" size={18} />
+      <Icon className="fill-blue-600" size={18} />
 
       <span className="ml-1">{label}</span>
     </a>

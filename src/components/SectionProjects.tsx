@@ -13,7 +13,7 @@ const projects = rawProjects.map((project) => ({
 
 const SectionProjects = () => {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-r from-violet-800 to-violet-600">
+    <section className="min-h-screen w-full bg-gradient-to-r from-violet-800 to-violet-600">
       <div className="container mx-auto py-10">
         <div className="mx-4">
           <h1 className="font-light text-5xl text-white mb-10">Projects</h1>
@@ -32,7 +32,7 @@ const SectionProjects = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
